@@ -2,17 +2,15 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { InView } from "react-intersection-observer";
-import { useState, useEffect } from "react";
 
 export default function Hero() {
   const { scrollY } = useScroll();
   const scale = useTransform(scrollY, [0, 500], [1.8, 1.2]);
   const y = useTransform(scrollY, [0, 500], [300, 200]);
-  const x = useTransform(scrollY, [0, 500], [0, 100]);
 
   const transition = { type: "spring", stiffness: 300, damping: 30 };
 
-  
+
 
   return (
     <>
