@@ -38,7 +38,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="font-semibold text-center text-3xl md:text-4xl lg:text-5xl mt-20"
         >
-          Savings using the power of Social Media
+          Your Followers = Your New Credit Score.
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -46,13 +46,17 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-center text-base md:text-lg lg:text-xl text-gray-600 mt-4"
         >
-          Comet is a platform that allows you to save money by using the power
-          of social media.
+          Comet is a platform that lets you turn your social influence into free
+          money to spend at your favorite brands.
         </motion.p>
         <Waitlist mode="light" />
 
         <div className="flex flex-col md:flex-row items-center justify-center mt-8">
-          <motion.div style={{ scale, y }} transition={transition} className="mb-4 md:mb-0">
+          <motion.div
+            style={{ scale, y }}
+            transition={transition}
+            className="mb-4 md:mb-0"
+          >
             <Image
               src="/assets/Device.png"
               alt="Hero"
@@ -125,7 +129,8 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="hidden md:block relative md:absolute md:bottom-[300px] lg:bottom-[300px] left-0 text-center text-black text-3xl font-bold max-w-sm"
               >
-                We make shopping and dining better.
+               Clout is Currency
+                <p className="text-gray-500 text-sm">Shop now, pay later with posts—more followers = more credit. It&apos;s math.</p>
               </motion.div>
             )}
           </InView>
@@ -138,7 +143,10 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="hidden md:block relative md:absolute lg:bottom-[300px] right-0 text-center text-black text-3xl font-bold max-w-sm"
               >
-                We analyze your social media to give you the credit you deserve.
+              No Cash, No Stress
+              <p className="text-gray-500 text-sm">Post, flex, unlock perks <br/>turn your feed into a shopping spree.</p>
+
+
               </motion.div>
             )}
           </InView>

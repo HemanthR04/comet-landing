@@ -40,7 +40,7 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className={`${mode === 'dark' ? 'text-gray-400' : 'text-gray-500'} text-sm mb-6`}
                   >
-                    Be the first to access new features. Enter your email below to join the waitlist.
+                    Be the first to access the app.<br/> Enter your email below to join the waitlist.
                   </motion.p>
                 </div>
                 <motion.form

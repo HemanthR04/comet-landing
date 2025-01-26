@@ -1,6 +1,7 @@
 import HowItWorks from "@/components/howitworks";
 import Hero from "@/components/hero";
 import { Brands } from "@/components/brands";
+import Brands2 from "@/components/brands2";
 export default function Home() {
   return (
     <>
@@ -8,7 +9,7 @@ export default function Home() {
     
       <HowItWorks />
       <Brands />
-  
+      <Brands2 />
     </>
   );
 }

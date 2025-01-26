@@ -14,8 +14,12 @@ export default function HowItWorks() {
             </div>
           </div>
           <h3 className="text-md font-semibold mt-6 mb-2">
-            1. Download our app  <br/> and get started
+            1. Sign Up & Get Access
           </h3>
+          <p className="text-gray-500">
+          Connect your Instagram, and we will calculate your Social Credit.
+          </p>
+          
         </div>
 
         {/* Analyze social media feature */}
@@ -29,8 +33,10 @@ export default function HowItWorks() {
             </div>
           </div>
           <h3 className="text-md font-semibold mt-6 mb-2">
-           2. We analyze your social media <br/> and give you the credit you deserve
+           2. Get Your Credits
           </h3>
+          <p className="text-gray-500">
+          Unlock a weekly credit limit based on your influence.          </p>
         </div>
 
         {/* Shop at partnered brands feature */}
@@ -44,8 +50,10 @@ export default function HowItWorks() {
             </div>
           </div>
           <h3 className="text-md font-semibold mt-6 mb-2">
-          3. Shop at our partnered brands <br/>using the credit we give you
+          3.Shop Your Fave Brands
           </h3>
+          <p className="text-gray-500">
+          Spend your credits at partnered brands.          </p>
         </div>
 
         {/* Repay the credit feature */}
@@ -59,8 +67,11 @@ export default function HowItWorks() {
             </div>
           </div>
           <h3 className="text-md font-semibold mt-6 mb-2">
-             4. Post about your experience <br/> and repay the credit
+             4. Post & Pay Back
           </h3>
+          <p className="text-gray-500">
+          Share your experience on Instagram, and your credit is paid.  
+          </p>
         </div>
         
       </div>

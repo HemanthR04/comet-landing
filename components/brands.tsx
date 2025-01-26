@@ -3,7 +3,6 @@
 import React, { type SVGProps } from "react";
 import { GradientHeading } from "@/components/ui/gradient-heading";
 import { LogoCarousel } from "@/components/ui/logo-carousel";
-
 function AppleIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -410,6 +409,7 @@ const allLogos = [
 export function Brands() {
   return (
     <div className="space-y-8 py-24  flex flex-col items-center justify-center">
+    
       <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center space-y-8">
         <div className="text-center">
           <GradientHeading variant="secondary">
