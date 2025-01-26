@@ -11,7 +11,7 @@ export default function Navbar() {
                     <h1 className="text-2xl font-bold">Comet Currency</h1>
                 </div>
             </div>
-            <div className=" items-center gap-4 ">  
+            <div className="flex justify-center items-center gap-4 ">  
                 <Link href="/">
                    <Image src="/assets/Instagram.png" alt="Instagram" width={24} height={24} />
                 </Link>

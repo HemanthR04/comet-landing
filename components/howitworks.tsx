@@ -1,7 +1,7 @@
 export default function HowItWorks() {
   return (
-    <div className="max-w-7xl mx-auto flex flex-col py-20 ">
-      <h1 className="text-center text-4xl font-bold my-12">How it works</h1>
+    <div className="max-w-7xl mx-auto flex flex-col py-20  h-full ">
+      <h1 className="text-center text-4xl font-bold my-12 text-black">How it works</h1>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
         {/* Download app feature */}
         <div className="feature-item text-center">

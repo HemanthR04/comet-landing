@@ -5,6 +5,7 @@ import Waitlist from "./waitlist";
 import { AnimatedShinyText } from "./ui/animated-shiny-text";
 import { ArrowRightIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { InView } from "react-intersection-observer";
 
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -18,7 +19,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative max-w-7xl mx-auto py-6 my-2 flex flex-col h-[130vh]">
+      <div className="relative max-w-7xl mx-auto py-6 my-2 flex flex-col h-[160vh]">
         <div className="z-10 flex min-h-12 items-center justify-center">
           <div
             className={cn(
@@ -115,12 +116,32 @@ export default function Hero() {
               height={130}
             />
           </motion.div>
-          <div className="hidden md:block relative md:absolute md:bottom-[200px] lg:bottom-40 left-0 text-center text-black text-3xl font-bold max-w-sm">
-            We make shopping and dining better.
-          </div>
-          <div className="hidden md:block relative md:absolute lg:bottom-40 right-0 text-center text-black text-3xl font-bold max-w-sm">
-            We analyze your social media to give you the credit you deserve.
-          </div>
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <motion.div
+                ref={ref}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: inView ? 1 : 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="hidden md:block relative md:absolute md:bottom-[300px] lg:bottom-[300px] left-0 text-center text-black text-3xl font-bold max-w-sm"
+              >
+                We make shopping and dining better.
+              </motion.div>
+            )}
+          </InView>
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <motion.div
+                ref={ref}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: inView ? 1 : 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="hidden md:block relative md:absolute lg:bottom-[300px] right-0 text-center text-black text-3xl font-bold max-w-sm"
+              >
+                We analyze your social media to give you the credit you deserve.
+              </motion.div>
+            )}
+          </InView>
         </div>
       </div>
     </>
