@@ -12,22 +12,7 @@ export default function Hero() {
 
   const transition = { type: "spring", stiffness: 300, damping: 30 };
 
-  const [isInView, setIsInView] = useState(false);
-  const [backgroundColor, setBackgroundColor] = useState('bg-white');
-
-  useEffect(() => {
-    const unsubscribe = scrollY.onChange((latest) => {
-      if (latest < 250) {
-        setBackgroundColor('bg-white');
-      } else if (latest < 500) {
-        setBackgroundColor('bg-black');
-      } else {
-        setBackgroundColor('bg-black');
-      }
-    });
-
-    return () => unsubscribe();
-  }, [scrollY]);
+  
 
   return (
     <>
